@@ -1,1 +1,171 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Devendra Singh — Frontend Developer</title>
+  <meta name="description" content="Devendra Singh — Frontend Developer. HTML, CSS, JavaScript. Landing pages, responsive websites." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#06b6d4; --glass: rgba(255,255,255,0.04);
+      --maxw:1000px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071026);color:#e6eef6}
+    .container{max-width:var(--maxw);margin:28px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:76px;height:76px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#022;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:16px;margin-top:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}}
+
+    .project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 8px;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#012;text-decoration:none;font-weight:600;margin-top:10px}
+
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* contact form */
+    form{display:grid;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    textarea{min-height:100px}
+
+    .topbar{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+    .links a{color:var(--muted);text-decoration:none;margin-left:12px;font-size:14px}
+
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .quote{background:#071127;padding:10px;border-radius:10px;color:var(--muted);font-size:14px}
+
+    /* subtle hover */
+    a.project-link:hover{transform:translateY(-4px)}
+    .project{transition:transform .18s ease, box-shadow .18s ease}
+    .project:hover{transform:translateY(-6px);box-shadow:0 14px 40px rgba(2,6,23,0.6)}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">DS</div>
+      <div>
+        <h1>Devendra Singh</h1>
+        <p class="lead">Frontend Developer • HTML, CSS, JavaScript • Landing pages & responsive websites</p>
+        <div class="skills" style="margin-top:8px">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive</span>
+          <span class="tag">Landing Page</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="topbar">
+        <strong>Featured Services</strong>
+        <div class="links">
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="https://fiverr.com/your-username" target="_blank">Fiverr</a>
+          <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;align-items:flex-start">
+        <div style="flex:1;min-width:240px">
+          <h2 style="margin:0 0 6px;">I build clean, responsive websites</h2>
+          <p class="lead" style="margin-top:0">Fast delivery • Clean code • Mobile-first design. I can build landing pages, small business websites and convert designs to HTML/CSS.</p>
+
+          <div class="cta">
+            <a class="btn" href="#contact">Hire me — ₹799</a>
+            <div class="quote">2 days delivery • Revisions included</div>
+          </div>
+        </div>
+        <div style="width:320px;min-width:200px">
+          <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
+            <strong>Quick Stats</strong>
+            <p style="margin:8px 0 0;color:var(--muted)">Projects completed: <strong>5+</strong><br>Response time: <strong>within 6 hrs</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2 style="margin:0 0 12px">Selected Projects</h2>
+      <div class="grid">
+        <article class="project project-link">
+          <h3>Landing Page — Product Promo</h3>
+          <p>Responsive landing page with hero, features and contact form. Built with HTML, CSS and simple JS for interactions.</p>
+          <a class="btn" href="#" target="_blank">View live</a>
+        </article>
+
+        <article class="project project-link">
+          <h3>Business Website — Kirana Shop</h3>
+          <p>3-page website (Home, About, Contact) optimized for mobile users. Easy to update and deploy.</p>
+          <a class="btn" href="#" target="_blank">View live</a>
+        </article>
+
+        <article class="project project-link">
+          <h3>Portfolio Template</h3>
+          <p>Personal portfolio template to showcase projects, contact and social links. Clean UI and quick load.</p>
+          <a class="btn" href="#" target="_blank">View live</a>
+        </article>
+
+        <article class="project project-link">
+          <h3>Bug Fix — Responsive Issues</h3>
+          <p>Fixed layout/overflow issues and improved accessibility on small screens. Delivered quick fixes with explanation.</p>
+          <a class="btn" href="#" target="_blank">View details</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 12px">Contact / Hire</h2>
+      <p style="margin:0 0 12px;color:var(--muted)">Send a quick message — I reply fast. Mention your project, deadline and budget.</p>
+
+      <form onsubmit="handleSubmit(event)">
+        <input id="name" placeholder="Your name" required />
+        <input id="email" placeholder="Email or phone" required />
+        <textarea id="message" placeholder="Project brief (pages, features, deadline, budget)" required></textarea>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn" type="submit">Send message</button>
+          <div style="color:var(--muted);font-size:13px">Or contact on WhatsApp: <strong>+91 9XXXXXXXXX</strong></div>
+        </div>
+      </form>
+
+      <div id="note" style="margin-top:10px;color:var(--muted);font-size:13px"></div>
+    </section>
+
+    <footer>
+      Made by Devendra • Available for freelance • Last update: 2025
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name||!email||!message){return}
+      // Simple behaviour: open mailto with prefilled content (works on mobile)
+      const subject = encodeURIComponent('Website project from ' + name);
+      const body = encodeURIComponent('Name: '+name+'\nContact: '+email+'\n\nMessage:\n'+message);
+      const mailto = 'mailto:your-email@example.com?subject='+subject+'&body='+body;
+      window.location.href = mailto;
+      document.getElementById('note').textContent = 'Opening your mail app to send the message. If nothing opens, copy the details and contact me on WhatsApp.';
+    }
+  </script>
+</body>
+</html>
